@@ -85,11 +85,11 @@ const Gainers = () => {
             borderColor: theme.colors.textOnPrimary,
             borderRadius: 15,
             margin: 10,
-            shadowColor: 'black',
+            shadowColor: 'border',
             shadowOffset: {width: 0, height: 0},
             shadowOpacity: 0.1,
-            shadowRadius: 5,
-            elevation: 8,
+            shadowRadius: 3,
+            elevation: 4,
           }}
           data={marketData}
           keyExtractor={item => item.ticker}

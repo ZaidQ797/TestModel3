@@ -88,14 +88,13 @@ const ScreenHeader = ({
           {title}
         </Text>
       </Box>
+      {renderRightIcon()}
 
-      {iconRight && (
+    {iconRight && (
         <AppPressable
           onPress={onRightButtonPress}
           disabled={onRightButtonPress === undefined}
-          containerStyle={styles.sideButton}>
-          {iconRight}
-        </AppPressable>
+          containerStyle={styles.sideButton}></AppPressable>
       )}
     </Box>
   );
